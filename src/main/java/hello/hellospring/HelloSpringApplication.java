@@ -18,3 +18,7 @@ public class HelloSpringApplication {
 // preference 들어가서 gradle 검색 -> build and run using을 둘다 인텔리제이로 바꾸어준다.
 // gradle을 통해서 실행하면 느린데, 설정을 바꾸어주면 인텔리제이에서 자바를 바로 띄워서 실행
 // 속도 up!
+
+// spring.io spring boot 들어가서 features에서 필요한 기능 검색
+// 템플릿 엔진을 사용하면...
+
