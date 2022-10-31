@@ -3,6 +3,7 @@ package hello.hellospring.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class HelloController {
@@ -12,8 +13,14 @@ public class HelloController {
         // data라는 이름으로 hello!라는 value를 담아서 보냄
         model.addAttribute("data", "hello!");
         return "hello";
-
     }
+
+    @GetMapping("hello-mvc")
+    public String helloMvc(@RequestParam("name") String name, Model model){ //커맨드p
+        model.addAttribute("name", name);
+        return "hello-template";
+    }
+
 }
 
 // ctrl 누르고 return 값 누르면 연결된 곳 바로감
