@@ -8,12 +8,12 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
-@Service
+
 public class MemberService { // ctrl shift t => new test
     // private final MemberRepository memberRepository = new MemoryMemberRepository();
 
     private final MemberRepository memberRepository;
-    @Autowired
+
     public MemberService(MemberRepository memberRepository){ // 외부에서 memberRepository 넣어줌 -> dependency infection
         this.memberRepository = memberRepository;
     }
