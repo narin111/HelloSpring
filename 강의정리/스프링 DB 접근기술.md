@@ -9,3 +9,6 @@
 - 다운로드 : https://www.h2database.com/html/main.html
 - 다운받아서 h2 폴더내의 bin 폴더로 이동
 - cmd에 "h2.bat" 입력 (맥은 chmod 755 h2.sh 입력, ./h2.sh 입력)
+
+
+### 순수 jdbc
