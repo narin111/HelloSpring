@@ -35,3 +35,9 @@
 ### JdbcTemplates - 라이브러리
 - 스프링 JdbcTemplate와 MyBatis 같은 라이브러리는 JDBC API에서 본 반복 코드를 대부분 제거해준다
 - 하지만 SQL은 직접 작성해야한다.
+
+
+## 정리
+- jdbc에서 jdbctemplate로 바꾸는 실습을 해봄
+- 반복적인 코드가 확 줄었음을 알 수 있었다.
+- JPA를 사용하면 쿼리도 JPA가 자동으로 처리해줌
