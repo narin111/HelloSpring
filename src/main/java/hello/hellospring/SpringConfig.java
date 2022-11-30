@@ -1,6 +1,7 @@
 package hello.hellospring;
 
 import hello.hellospring.repository.JdbcMemberRepository;
+import hello.hellospring.repository.JdbcTemplateMemberRepository;
 import hello.hellospring.repository.MemberRepository;
 import hello.hellospring.service.MemberService;
 import org.springframework.context.annotation.Bean;
@@ -25,6 +26,7 @@ public class SpringConfig {
     @Bean
     public MemberRepository memberRepository(){
         // return new MemoryMemberRepository();
-        return new JdbcMemberRepository(dataSource); // 스프링을 사용하는 결정적인 이유
+        // return new JdbcMemberRepository(dataSource); // 스프링을 사용하는 결정적인 이유
+        return new JdbcTemplateMemberRepository(dataSource);
     }
 }
